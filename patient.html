@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SihhaLink | Unified Patient Medical Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="side-nav">
+        <div class="logo">SihhaLink</div>
+        <div class="nav-links">
+            <a href="#personal-info">Personal Information</a>
+            <a href="#medical-report">Medical Report & Analysis</a>
+            <a href="#medical-history">Past Medical History</a>
+            <a href="#follow-up">Current Medical Follow-up</a>
+            <a href="#ai-assistant">AI Voice Assistant</a>
+            <a href="#qr-code" class="highlight-link">Emergency Patient QR Code</a>
+            <a href="#healthcare-map">Nearby Hospitals & Prices</a>
+            <a href="#emergency" class="emergency-link">EMERGENCY (Ambulance)</a>
+            <a href="#reservation">Self-Booking System</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+
+        <section id="personal-info">
+            <h2>Personal Information & Privacy</h2>
+            <div class="card">
+                <p>Profile Status: Verified via CINE</p>
+            </div>
+        </section>
+
+        <section id="medical-report">
+            <h2>Medical Report</h2>
+            <div class="report-overview">
+                <p><strong>Patient Data:</strong> Full Name, DOB, Blood Group, Chronic Diseases List.</p>
+            </div>
+
+            <div class="medication-module">
+                <h3>Medications Portfolio</h3>
+                <div class="organ-group"><strong>Heart:</strong> List of cardiovascular prescriptions.</div>
+                <div class="organ-group"><strong>Stomach:</strong> List of gastrointestinal prescriptions.</div>
+                <p><em>*Comment: Every medication the patient takes is centralized here for easy tracking.</em></p>
+            </div>
+
+            <div class="analysis-module">
+                <h3>Lab Analysis & Results</h3>
+                <div class="analysis-item">Type of Test | Date | <strong>Result (PDF Download)</strong></div>
+            </div>
+
+            <div class="radiology-module">
+                <h3>Imaging & Radiologies</h3>
+                <p>Access to latest X-Rays and scans.</p>
+            </div>
+        </section>
+
+        <section id="medical-history">
+            <h2>Past Medical History</h2>
+            <div class="history-summary">Allergies, Past Labs, Vaccination Records.</div>
+
+            <div class="surgical-table">
+                <h3>Surgical Records</h3>
+                <table>
+                    <tr><th>Date</th><th>Procedure</th><th>Surgeon</th></tr>
+                    <tr><td>---</td><td>---</td><td>---</td></tr>
+                </table>
+                <div class="surgical-summary">Summary of the surgical procedure and recovery notes.</div>
+            </div>
+
+            <div class="consultation-history">
+                <h3>Past Consultations</h3>
+                <table>
+                    <tr><th>Date</th><th>Doctor</th><th>Reason</th><th>Meds</th></tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="follow-up">
+            <h2>Current Medical Follow-up</h2>
+            <div class="specialist-grid">
+                <span>Cardiology</span> | <span>Neurology</span> | <span>Gastroenterology</span>
+            </div>
+        </section>
+
+        <section id="ai-assistant">
+            <h2>SihhaLink AI Assistant</h2>
+            <div class="ai-box">
+                <p>"How can I help you? (e.g., 'Show my QR Code' or 'Book an Appointment')"</p>
+                <div class="audio-ui">Voice Assistant Active: Multilingual Support Available.</div>
+            </div>
+        </section>
+
+        <section id="qr-code">
+            <h2>The Key: Patient QR Code</h2>
+            <div class="qr-container">
+                <div class="qr-placeholder">[QR CODE IMAGE]</div>
+                <p>The ultimate tool for dignity: No more carrying heavy folders of medical papers.</p>
+            </div>
+        </section>
+
+        <section id="healthcare-map">
+            <h2>Nearby Healthcare & Pricing</h2>
+            <div class="map-placeholder">Location Map: Pharmacies, Labs, Clinics.</div>
+            <div class="price-list">Medication Prices | Test Prices | X-Ray Prices.</div>
+        </section>
+
+        <section id="emergency">
+            <h2>Emergency Support</h2>
+            <button class="emergency-btn">CALL AMBULANCE & ALERT FAMILY</button>
+        </section>
+
+        <section id="reservation">
+            <h2>Appointment Reservation</h2>
+            <div class="reservation-calendar">
+                <h3>Doctor's Schedule</h3>
+                <div class="calendar-grid">
+                    <div class="slot reserved">8:00 (Busy)</div>
+                    <div class="slot available">9:00 (Free)</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
