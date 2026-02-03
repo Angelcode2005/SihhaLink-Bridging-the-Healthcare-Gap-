@@ -1,4 +1,5 @@
 SihhaLink: Democratizing Healthcare
+
 🌟 Project Mission
 "Technology is a universal right." SihhaLink bridges the digital divide in Morocco by providing a secure, human-centric healthcare portal.
 
