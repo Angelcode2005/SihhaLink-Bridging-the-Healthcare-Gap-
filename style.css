@@ -1,0 +1,158 @@
+:root {
+    /* Sophisticated Color Palette based on your reference */
+    --primary-blue: #5B7C99;      /* Dusty Blue: Professional & Calm */
+    --accent-wine: #722F37;       /* Deep Wine: For distinctive emphasis */
+    --bg-cream: #FDFBF7;          /* Cream/Beige: Soft & Warm background */
+    --surface-tan: #D2B48C;       /* Tan: For borders and subtle cards */
+    --text-dark: #3E4A59;         /* Dark Slate for readability */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-cream); /* Using your Cream color for background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.onboarding-container {
+    background: var(--white);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(91, 124, 153, 0.1); /* Subtle Blue shadow */
+    border: 1px solid var(--surface-tan); /* Tan border for elegance */
+    margin: 20px;
+}
+
+.form-step { 
+    display: none; 
+    text-align: center; 
+}
+
+.form-step.active { 
+    display: block; 
+    animation: fadeInSlide 0.6s ease-out; 
+}
+
+h2 { 
+    color: var(--primary-blue); /* Dusty Blue for headings */
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.step-desc { 
+    color: var(--text-dark); 
+    opacity: 0.8;
+    font-size: 0.95rem; 
+    margin-bottom: 30px;
+}
+
+/* Elegant Input Styling */
+input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    border: 1.5px solid var(--surface-tan);
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #FFFEFC;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px rgba(91, 124, 153, 0.1);
+}
+
+/* Buttons with Gradient transition to Wine red */
+.btn-next {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+    background: var(--text-dark);
+    transform: translateY(-2px);
+}
+
+/* Special Button for completion in Deep Wine red */
+.btn-finish {
+    width: 100%;
+    padding: 16px;
+    background: var(--accent-wine); /* Deep Wine Red for distinction */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(114, 47, 55, 0.2);
+}
+
+.btn-finish:hover {
+    background: #5A252B; /* Darker Wine on hover */
+}
+
+/* Role Cards Styling [Ref: Photo 113c8] */
+.role-grid { 
+    display: grid; 
+    gap: 12px; 
+    margin-bottom: 25px;
+}
+
+.role-card {
+    padding: 18px;
+    border: 2px solid var(--bg-cream);
+    background: #F9F7F2;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.role-card:hover {
+    border-color: var(--surface-tan);
+    background: var(--white);
+}
+
+/* Verification Area [Ref: Photo 113c8] */
+.upload-area {
+    background: #FFFEFC;
+    border: 2px dashed var(--surface-tan);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+/* Video Placeholder */
+.video-placeholder {
+    height: 180px;
+    background: var(--text-dark);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    border: 3px solid var(--surface-tan);
+}
+
+@keyframes fadeInSlide { 
+    from { opacity: 0; transform: translateY(15px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
