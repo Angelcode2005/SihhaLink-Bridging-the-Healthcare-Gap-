@@ -20,4 +20,4 @@ SihhaLink: Democratizing Healthcare
 *Identity & Trust: A specialized module for identity verification to ensure a safe environment for all stakeholders.
 
 🔗 Design Map
-👉 [View the Full System Architecture on Miro] (https://miro.com/app/board/uXjVImwYxpE=/?share_link_id=384322000403)
+👉 [View the Full System Architecture on Miro](https://miro.com/app/board/uXjVImwYxpE=/?share_link_id=255840446992))
