@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SihhaLink | Joining the Revolution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="onboarding-container">
+        <div class="form-step active" id="step1">
+            <h2>Create Account</h2>
+            <p class="step-desc">Start your journey toward democratized healthcare.</p>
+            <div class="social-login">
+                <button class="btn-social">Google</button>
+                <button class="btn-social">Facebook</button>
+            </div>
+            <input type="email" placeholder="Email or Phone Number" required>
+            <input type="password" placeholder="Create Secure Password" required>
+            <button class="btn-next" onclick="nextStep(2)">Next: Personal Info</button>
+        </div>
+
+        <div class="form-step" id="step2">
+            <h2>Personal Details</h2>
+            <p class="step-desc">Please enter your information to secure your medical profile.</p>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Gmail Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button class="btn-next" onclick="nextStep(3)">Next: Choose Role</button>
+        </div>
+
+        <div class="form-step" id="step3">
+            <h2>Continue as</h2>
+            <p class="step-desc">Select your account type to proceed.</p>
+            <div class="role-grid">
+                <button class="role-card" onclick="nextStep(4)">Patient</button>
+                <button class="role-card" onclick="nextStep(4)">Doctor</button>
+                <button class="role-card" onclick="nextStep(4)">Labo</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step4">
+            <h2>Identity Verification</h2>
+            <p class="step-desc">Securely upload your National ID (CINE) to prevent fraud.</p>
+            <div class="upload-area">
+                <label>Front Side of CINE</label>
+                <input type="file" accept="image/*">
+            </div>
+            <div class="upload-area">
+                <label>Back Side of CINE</label>
+                <input type="file" accept="image/*">
+            </div>
+            <button class="btn-next" onclick="nextStep(5)">Verify & Continue</button>
+        </div>
+
+        <div class="form-step" id="step5">
+            <h2>How it works</h2>
+            <div class="video-placeholder">
+                <p>▶️ Explanatory Video: Using SihhaLink</p>
+            </div>
+            <div class="completion-card">
+                <div class="success-icon">✔️</div>
+                <h3>Registration Completed!</h3>
+                <p> Thank you for your registration Our team is reviewing your information. You will receive an update within 24-48 hours.</p>
+            </div>
+            <button class="btn-finish">Go to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function nextStep(step) {
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step' + step).classList.add('active');
+        }
+    </script>
+</body>
+</html>
